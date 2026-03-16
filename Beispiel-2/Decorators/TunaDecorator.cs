@@ -2,20 +2,20 @@
 
 namespace DecoratorPatternDemoPizza.Decorators
 {
-    public class Decorator : PizzaDecorator
+    public class TunaDecorator : PizzaDecorator
     {
-        public Tunaecorator(IPizza pizza) : base(pizza)
+        public TunaDecorator(IPizza pizza) : base(pizza)
         {
         }
 
         public override string GetDescription()
         {
-            return decoratedCoffee.GetDescription() + ", Tuna";
+            return decoratedPizza.GetDescription() + ", Tuna";
         }
 
         public override double GetCost()
         {
-            return decoratedCoffee.GetCost() + 2.5;
+            return decoratedPizza.GetCost() + 2.5;
         }
     }
 }

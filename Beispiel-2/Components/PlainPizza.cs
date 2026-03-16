@@ -1,12 +1,17 @@
 ﻿using DecoratorPatternDemoPizza.Interfaces;
 
-namespace DecoratorPatternDemo.Components
+namespace DecoratorPatternDemoPizza.Components
 {
     public class PlainPizza : IPizza
     {
         public string GetDescription()
         {
             return "Plain Pizza";
+        }
+
+        public int GetSize()
+        {
+           return 23;
         }
 
         public double GetCost()

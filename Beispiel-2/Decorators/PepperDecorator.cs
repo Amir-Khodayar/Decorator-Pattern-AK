@@ -6,16 +6,16 @@ namespace DecoratorPatternDemoPizza.Decorators
     {
         public PepperDecorator(IPizza pizza) : base(pizza)
         {
+        }
 
         public override string GetDescription()
         {
-            return decoratedCoffee.GetDescription() + ", pepper";
+            return decoratedPizza.GetDescription() + ", pepper";
         }
 
         public override double GetCost()
         {
-            return decoratedCoffee.GetCost() + 2.0;
+            return decoratedPizza.GetCost() + 2.0;
         }
     }
-}
 }

@@ -13,16 +13,18 @@ namespace DecoratorPatternDemoPizza.Decorators
 
         public virtual string GetDescription()
         {
-            return decoratedCoffee.GetDescription();
+            return decoratedPizza.GetDescription();
         }
 
         public virtual double GetCost()
         {
-            return decoratedCoffee.GetCost();
+            return decoratedPizza.GetCost();
         }
 
-        public virtual double GetSize() {
+        public virtual int GetSize()
+        {
 
             return decoratedPizza.GetSize();
+        }
     }
 }
