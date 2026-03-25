@@ -18,10 +18,5 @@ namespace DecoratorPatternDemoPizza.Components
         {
             return 6.0;
         }
-
-        public int GetSize(int Size)
-        {
-            return Size;
-        }
     }
 }
